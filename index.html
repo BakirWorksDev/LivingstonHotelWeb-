@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Пример моего сайта, который рассказывает о проектах на React и веб-разработке."
+    />
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/headerNav.css" />
+    <link rel="stylesheet" href="./styles/apartaments.css" />
+    <link rel="stylesheet" href="./styles/header.css" />
+    <link rel="stylesheet" href="./styles/concept.css" />
+    <link rel="stylesheet" href="./styles/Ui/button.css" />
+    <title>Livingston</title>
+  </head>
+  <body>
+    <div class="navigation">
+      <nav class="header__nav">
+        <ul>
+          <li class="header__item"><a href="#">О проекте</a></li>
+          <li class="header__item"><a href="#">Стоимость</a></li>
+          <li class="header__item"><a href="#">Рассрочка</a></li>
+          <li class="header__item"><a href="#">Новости</a></li>
+          <li class="header__item"><a href="#">Контакты</a></li>
+        </ul>
+        <div class="social">
+          <span>© 2023-2024 Livingston-hotel</span>
+          <ul class="social__ul">
+            <li>
+              <a
+                href="https://wa.me/79667773411"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Написать в WhatsApp по номеру +7 966 777-34-11"
+              >
+                <img
+                  class="social__icon"
+                  src="./images/icons/whatsapp.svg"
+                  alt="Иконка WhatsApp"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="#"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Открыть телфон в новом окне"
+              >
+                <img
+                  class="social__icon"
+                  src="./images/icons/iconTel.svg"
+                  alt="Иконка WhatsApp"
+                />
+              </a>
+            </li>
+            <li>
+              <a
+                href="https://vk.com/livingston_sochi_livingston"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Открыть WhatsApp в новом окне"
+              >
+                <img
+                  class="social__icon"
+                  src="./images/icons/iconVk.svg"
+                  alt="Иконка WhatsApp"
+                />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+      <div class="header__no_content"></div>
+    </div>
+    <header class="header">
+      <div class="container">
+        <div class="header__coantainer">
+          <div class="logo">
+            <a
+              href="./pages/noPage.html"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <img
+                class="logo__img"
+                src="./images/icons/logo.svg"
+                alt="Логотип компании Livingston"
+              />
+              <h1>LIVINGSTON</h1>
+            </a>
+          </div>
+          <buttton class="burger">
+            <span class="burger__item"> </span
+            ><span class="burger__item"> </span
+            ><span class="burger__item"> </span>
+            <span class="burger__item"> </span
+          ></buttton>
+        </div>
+      </div>
+    </header>
+    <section class="apartments">
+      <div class="apartments__container">
+        <div class="container">
+          <div class="apartments__content">
+            <header class="apartments__header">
+              <h1>HOTEL & APARTMENTS</h1>
+              <h2>LIVINGSTON SOCHI GRAND RESORT & SPA</h2>
+            </header>
+            <article class="apartments__article">
+              <p>
+                Премиальный комплекс LIVINGSTON (ЖК «Ливингстон») на первой
+                береговой линии в Сочи. Масштабный проект курортной недвижимости
+                на территории 5,6 га с безупречным стилем и пятизвездочным
+                сервисом.
+              </p>
+              <p>Ограниченное предложение на небольшие лоты.</p>
+              <a
+                aria-colspan="button"
+                href="ссылка_на_подробности"
+                class="button"
+              >
+                Подробнее
+              </a>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="concept">
+      <div class="container">
+        <div class="concept__conatainer">
+          <div class="concept__info">
+            <header>
+              <h1>LIVIGSTON concept</h1>
+            </header>
+            <div class="concept__item">
+              <p>
+                Единственный комплекс в Сочи с концепцией Congress Resort & SPA
+                Wellness в центре Сочи. Премиальная территория, где важная
+                каждая деталь. Стилистическое решение концепции отражено в
+                бежевых, молочных тонах с легким добавлением кофейных оттенков.
+              </p>
+              <p>
+                Пространство класса Deluxe, которое стирает границу ощущения
+                присутствия на пляже или в собственной резиденции.
+              </p>
+              <a href="ссылка_на_подробности" class="button"> Подробнее </a>
+            </div>
+          </div>
+          <div class="concept__swiper">sds</div>
+        </div>
+      </div>
+    </section>
+
+    <script type="module" src="./scripts/header.js"></script>
+  </body>
+</html>

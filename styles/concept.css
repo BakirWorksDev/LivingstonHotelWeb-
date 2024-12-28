@@ -1,0 +1,24 @@
+.concept {
+  width: 100%;
+  height: max-content;
+  .concept__conatainer {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    .concept__info {
+      width: calc(100% - 50px);
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      .concept__item {
+        width: 100%;
+      }
+    }
+    .concept__swiper {
+      width: 760px;
+      height: 630px;
+      border: 1px solid gray;
+    }
+  }
+}

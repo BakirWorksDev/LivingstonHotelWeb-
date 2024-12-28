@@ -1,0 +1,47 @@
+* {
+  box-sizing: border-box;
+  padding: 0px;
+  margin: 0px;
+}
+@font-face {
+  font-family: "Jost";
+  src: url("./fonts/11zon_Jost_VariableFont_wght.woff2") format("woff2"),
+    url("./fonts/11zon_Jost_Italic_VariableFont_wght.woff2") format("woff2");
+}
+:root {
+  --hederhHeight: 105px;
+  --timeAnimation: 0.6s;
+  --fontFamily: "Jost", serif;
+  --NavHoverColor: #927f6a;
+  --defoltColor: black;
+  --fontSze: clamp(18px, 2vw, 24px);
+  --color: #fff;
+}
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: var(--defoltColor);
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  height: max-content;
+  font-family: var(--fontFamily);
+  background: silver;
+}
+.container {
+  width: 100%;
+  max-width: 1400px;
+  height: 100%;
+  padding: 0px 50px;
+  margin: auto;
+  display: block;
+}
+@media screen and (max-width: 720px) {
+  .container {
+    padding: 0px 10px;
+  }
+}
