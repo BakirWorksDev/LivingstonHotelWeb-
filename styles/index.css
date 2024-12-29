@@ -16,6 +16,7 @@
   --defoltColor: black;
   --fontSze: clamp(18px, 2vw, 24px);
   --color: #fff;
+  --borderImages: 10px;
 }
 li {
   list-style: none;
@@ -24,13 +25,11 @@ a {
   text-decoration: none;
   color: var(--defoltColor);
 }
-
 body {
   width: 100%;
   min-height: 100vh;
   height: max-content;
   font-family: var(--fontFamily);
-  background: silver;
 }
 .container {
   width: 100%;
@@ -40,7 +39,7 @@ body {
   margin: auto;
   display: block;
 }
-@media screen and (max-width: 720px) {
+@media screen and (max-width: 950px) {
   .container {
     padding: 0px 10px;
   }

@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="./styles/header.css" />
     <link rel="stylesheet" href="./styles/concept.css" />
     <link rel="stylesheet" href="./styles/Ui/button.css" />
+    <link rel="stylesheet" href="./styles/swiperCustomization.css" />
     <title>Livingston</title>
   </head>
   <body>
@@ -131,7 +132,7 @@
     </section>
     <section class="concept">
       <div class="container">
-        <div class="concept__conatainer">
+        <div class="concept__container">
           <div class="concept__info">
             <header>
               <h1>LIVIGSTON concept</h1>
@@ -150,11 +151,46 @@
               <a href="ссылка_на_подробности" class="button"> Подробнее </a>
             </div>
           </div>
-          <div class="concept__swiper">sds</div>
+          <div class="concept__swiper">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img src="./images/numbers/1.jpg" alt="" srcset="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/numbers/2.jpg" alt="" srcset="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/numbers/3.jpg" alt="" srcset="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/numbers/4.jpg" alt="" srcset="" />
+                </div>
+                <div class="swiper-slide">
+                  <img src="./images/numbers/5.jpg" alt="" srcset="" />
+                </div>
+              </div>
+              <div class="swiper-pagination"></div>
+              <div class="custom-prev-button">
+                <img
+                  src="./images/icons/customPrevB.svg"
+                  alt="prev-button"
+                  srcset=""
+                />
+              </div>
+              <div class="custom-next-button">
+                <img
+                  src="./images/icons/customPrevB.svg"
+                  alt="next-button"
+                  srcset=""
+                />
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-
     <script type="module" src="./scripts/header.js"></script>
+    <script type="module" src="./scripts/swiperCustomization.js"></script>
   </body>
 </html>

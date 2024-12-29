@@ -1,24 +1,94 @@
 .concept {
   width: 100%;
   height: max-content;
-  .concept__conatainer {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    .concept__info {
-      width: calc(100% - 50px);
+  .container {
+    .concept__container {
+      width: 100%;
+      height: 100%;
       display: flex;
-      flex-direction: column;
-      row-gap: 20px;
-      .concept__item {
+      margin: 80px 0px;
+      .concept__info {
         width: 100%;
+        max-width: 300px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 40px;
+        .concept__item {
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          align-items: start;
+          row-gap: 40px;
+          padding: 0px 20px 0px 0px;
+          line-height: 1.5;
+          color: #332f2f;
+          font-weight: 300;
+          font-size: 16px;
+        }
+      }
+      .concept__swiper {
+        width: 760px;
+        height: 630px;
+        display: block;
+        border: 1px solid #7a7e83;
+        border-radius: var(--borderImages);
+        overflow: hidden;
+        cursor: pointer;
       }
     }
-    .concept__swiper {
-      width: 760px;
-      height: 630px;
-      border: 1px solid gray;
+  }
+}
+@media screen and (max-width: 950px) {
+  .concept {
+    .container {
+      .concept__container {
+        flex-direction: column;
+        row-gap: 30px;
+        justify-content: center;
+        align-items: center;
+        .concept__info {
+          width: 100%;
+          max-width: 100%;
+          justify-content: center;
+          align-items: center;
+          .concept__item {
+            width: 100%;
+            padding: 0px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+          }
+        }
+        .concept__swiper {
+          width: 700px;
+          height: 630px;
+          margin: auto;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .concept {
+    .container {
+      .concept__container {
+        .concept__swiper {
+          width: 390px;
+          height: 300px;
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 390px) {
+  .concept {
+    .container {
+      .concept__container {
+        .concept__swiper {
+          width: 300px;
+          height: 300px;
+        }
+      }
     }
   }
 }
