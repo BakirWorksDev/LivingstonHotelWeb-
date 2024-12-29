@@ -8,7 +8,7 @@ import "swiper/css/pagination";
 Swiper.use([EffectFade, Navigation, Pagination]);
 
 const swiperConfig = {
-  modules: [EffectFade, Navigation, Pagination],
+  // modules: [EffectFade, Navigation, Pagination],
   effect: "fade",
   fadeEffect: {
     crossFade: true,
