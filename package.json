@@ -12,7 +12,8 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
-    "vite": "^6.0.6"
+    "vite": "^6.0.6",
+    "vite-plugin-pages": "^0.32.4"
   },
   "dependencies": {
     "swiper": "^11.1.15"
