@@ -1,0 +1,101 @@
+.guide {
+  width: 100%;
+  height: max-content;
+  padding: 80px 0px;
+  background: var(--baground);
+  .guide__container {
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+    .guide__paths {
+      display: flex;
+      flex-direction: column;
+      .guide__point {
+        width: 100%;
+        height: 150px;
+        border: 1px solid rgb(46, 44, 44);
+        display: flex;
+        position: relative;
+        .guide__info {
+          text-align: end;
+          width: 100%;
+          height: 100%;
+          background: gray;
+          padding-right: 10px;
+          border: 1px solid rgb(184, 43, 43);
+          p:nth-of-type(1) {
+            color: var(--defoltColor);
+            font-size: 20px;
+            font-weight: 500;
+          }
+          p:nth-of-type(2) {
+            span {
+              color: var(--defoltColor);
+              font-size: 20px;
+              font-weight: 500;
+            }
+          }
+        }
+        .guide__info:nth-of-type(1)::before {
+          content: "";
+          top: 0;
+          right: 0;
+          width: 60px;
+          height: 30px;
+          background: saddlebrown;
+          position: absolute;
+        }
+      }
+    }
+  }
+}
+.timeline {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  gap: 20px;
+  position: relative;
+}
+
+.timeline-item {
+  display: contents;
+}
+
+.timeline-content {
+  grid-column: 1;
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  position: relative;
+}
+
+.timeline-circle {
+  grid-column: 2;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  border-radius: 50%;
+  align-self: center;
+}
+
+.timeline-item:nth-child(even) .timeline-content {
+  grid-column: 3;
+}
+
+.timeline-content::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: calc(100% + 20px);
+  background: #000;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.timeline-item:nth-child(even) .timeline-content::before {
+  left: -20px;
+}
+
+.timeline-item:nth-child(odd) .timeline-content::before {
+  right: -20px;
+}
