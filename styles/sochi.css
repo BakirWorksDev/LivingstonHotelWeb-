@@ -1,6 +1,6 @@
 .sochi {
   width: 100%;
-  height: 400px;
+  height: 738px;
   position: relative;
   .blackout {
     position: absolute;
@@ -16,6 +16,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
+    justify-content: center;
     row-gap: 20px;
     max-width: 35ch;
     color: var(--color);
@@ -30,6 +31,14 @@
     }
     span {
       font-weight: 500;
+    }
+  }
+}
+@media screen and (max-width: 720px) {
+  .sochi {
+    .sochi__container {
+      max-width: 30ch;
+      font-size: 16px;
     }
   }
 }
