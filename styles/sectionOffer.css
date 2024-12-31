@@ -1,0 +1,129 @@
+.sectionOffer {
+  width: 100%;
+  height: 100%;
+  background: var(--baground);
+  .sectionOffer__container {
+    width: 100%;
+    height: 100%;
+    padding: 60px 0px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    row-gap: 30px;
+    .sectionOffer__buttons {
+      display: flex;
+      justify-content: center;
+      column-gap: 20px;
+    }
+    .sectionOffer__button {
+      width: max-content;
+      text-align: 100%;
+      background: none;
+      color: black;
+      border: 1px solid black;
+      transition: all var(--timeAnimation);
+    }
+    .sectionOffer__button:hover {
+      background: black;
+      transform: scale(1.1);
+      color: var(--color);
+    }
+    .sectionOffer__cards {
+      width: 100%;
+      height: max-content;
+      display: flex;
+      flex-direction: column;
+      row-gap: 30px;
+      .sectionOffer__card {
+        width: 100%;
+        height: max-content;
+        padding: 5px 10px;
+        border-radius: var(--borderImages);
+        border: 1px solid rgba(97, 87, 87, 0.61);
+        display: flex;
+        column-gap: 20px;
+        .sectionOffer__img {
+          width: 190px;
+          height: 150px;
+          border-radius: var(--borderImages);
+        }
+        .sectionOffer__card_content {
+          width: 100%;
+          height: 100%;
+          display: flex;
+          flex-direction: column;
+          row-gap: 20px;
+          span {
+            color: rgb(41, 175, 92);
+          }
+        }
+      }
+    }
+  }
+}
+@media screen and (max-width: 1000px) {
+  .sectionOffer {
+    width: 100%;
+    height: 100%;
+    background: var(--baground);
+    .sectionOffer__container {
+      width: 100%;
+      height: 100%;
+      padding: 60px 0px;
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      row-gap: 30px;
+      .sectionOffer__buttons {
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+      }
+      .sectionOffer__button {
+        width: max-content;
+        text-align: 100%;
+        background: none;
+        color: black;
+        border: 1px solid black;
+        transition: all var(--timeAnimation);
+      }
+      .sectionOffer__button:hover {
+        background: black;
+        transform: scale(1.1);
+        color: var(--color);
+      }
+      .sectionOffer__cards {
+        width: 100%;
+        height: max-content;
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+        .sectionOffer__card {
+          width: 100%;
+          height: max-content;
+          padding: 5px 10px;
+          border-radius: var(--borderImages);
+          border: 1px solid rgba(97, 87, 87, 0.61);
+          display: flex;
+          column-gap: 20px;
+          .sectionOffer__img {
+            width: 190px;
+            height: 150px;
+            border-radius: var(--borderImages);
+          }
+          .sectionOffer__card_content {
+            width: 100%;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            row-gap: 20px;
+            span {
+              color: rgb(41, 175, 92);
+            }
+          }
+        }
+      }
+    }
+  }
+}
